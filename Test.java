@@ -1,5 +1,3 @@
-//CSC371 Assignment 1
-//James Michael 788456
 public class Test {
 	public static void main(String[] args) {
 		//Creates two separate instances of the queue, one Integer and one String.

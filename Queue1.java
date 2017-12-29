@@ -1,12 +1,7 @@
 import java.util.*;
 
-//James Michael 788456
+//James Michael
 public class Queue1<E> {
-	/*I was originally using ArrayDeque to complete this, but realised
-	 *after looking at the Java documentation that LinkedList would be 
-	 *more useful for reversing and randomising, since it can use these
-	 *methods from 'Collections'.
-	 */
 	private LinkedList<E> queue;
 
 	public Queue1() {
@@ -50,21 +45,6 @@ public class Queue1<E> {
 	//Uses the reverse method found in Collections.
 	public void reverse() {
 		Collections.reverse(queue);
-
-		/*This is the code I was originally using
-		 *with an ArrayDeque.
-		 *It adds the elements again in reverse order and then
-		 *removes the original elements.
-		 *
-		 *int queueSize = length();
-		 *for (E e : list) {
-		 *	list.addFirst(e);
-		 *}
-		 *int newQueueSize = length();
-		 *for (int i = queueSize; i < newQueueSize; i++) {
-		 *	list.removeLast();
-		 *}
-		 */
 	}
 
 	//Randomises the order of elements inside the queue.
